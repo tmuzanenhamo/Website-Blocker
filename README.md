@@ -1,6 +1,6 @@
 # Website-Blocker
 
-This python scripy can be used to block certain websites which can be distracting when you want to work.
+This python script can be used to block certain websites which can be distracting when you want to work.
 
 ## How To Run
 
