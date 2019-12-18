@@ -10,7 +10,7 @@ websites = ["www.facebook.com","facebook.com","www.youtube.com"]
 while True:
     if dt(dt.now().year,dt.now().month,dt.now().day,8) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,23):
         print("Get Busy sir......")
-        with open(host_temp, 'r+') as file: #r+ enables read and write to a file
+        with open(host_path, 'r+') as file: #r+ enables read and write to a file
             content=file.read()
             for website in websites:
                 if website in content:
@@ -19,7 +19,7 @@ while True:
                     file.write(redirect+" "+ website+"\n")
 
     else:
-        with open(host_temp,'r+') as file:
+        with open(host_path,'r+') as file:
             content=file.readlines()
             file.seek(0)
             for line in content:
